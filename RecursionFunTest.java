@@ -218,7 +218,7 @@ public class RecursionFunTest {
 
 	@Test
 	public void testFindExitWithSmallGrid1() {
-
+		// Bottom
 		char[][] grid = { { '+', '+', '+', '+' }, { '+', ' ', ' ', '+' }, { '+', ' ', ' ', '+' },
 				{ '+', ' ', ' ', '+' }, { '+', ' ', '+', '+' } };
 		ObstacleCourse top = new ObstacleCourse(2, 2, grid);
@@ -235,6 +235,7 @@ public class RecursionFunTest {
 
 	@Test
 	public void testFindExitWithSmallGrid2() {
+		// left
 		char[][] grid = { { '+', '+', '+', '+' }, { ' ', ' ', ' ', '+' }, { '+', ' ', ' ', '+' },
 				{ '+', ' ', ' ', '+' }, { '+', '+', '+', '+' } };
 		ObstacleCourse top = new ObstacleCourse(2, 2, grid);
@@ -247,7 +248,8 @@ public class RecursionFunTest {
 
 	@Test
 	public void testFindExitWithSmallGrid3() {
-		char[][] grid = { { '+', '+', ' ', '+' }, { ' ', ' ', ' ', '+' }, { '+', ' ', ' ', '+' },
+		//
+		char[][] grid = { { '+', '+', ' ', '+' }, { '+', ' ', ' ', '+' }, { '+', ' ', ' ', '+' },
 				{ '+', ' ', ' ', '+' }, { '+', '+', '+', '+' } };
 		ObstacleCourse top = new ObstacleCourse(3, 1, grid);
 		assertEquals(3, top.getStartRow());
@@ -261,6 +263,7 @@ public class RecursionFunTest {
 
 	@Test
 	public void testFindExitWithSmallGrid4() {
+		// right
 		char[][] grid = { { '+', '+', '+', '+', '+' }, { '+', ' ', ' ', ' ', '+' }, { '+', ' ', '+', ' ', '+' },
 				{ '+', '+', '+', ' ', ' ' }, { '+', '+', '+', '+', '+' } };
 		ObstacleCourse top = new ObstacleCourse(1, 1, grid);

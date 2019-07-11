@@ -92,19 +92,15 @@ public class ObstacleCourse {
 			} else {
 
 				if (course[row + 1][col] != '+' && course[row + 1][col] != TRIED) {
-					System.out.print("a");
 					escaped = findExit(row + 1, col);
 				}
 				if (course[row][col + 1] != '+' && course[row][col + 1] != TRIED) {
-					System.out.print("c");
 					escaped = findExit(row, col + 1);
 				}
 				if (course[row - 1][col] != '+' && course[row - 1][col] != TRIED) {
-					System.out.print("b");
 					escaped = findExit(row - 1, col);
 				}
 				if (course[row][col - 1] != '+' && course[row][col - 1] != TRIED) {
-					System.out.print("d");
 					escaped = findExit(row, col - 1);
 				}
 			}
